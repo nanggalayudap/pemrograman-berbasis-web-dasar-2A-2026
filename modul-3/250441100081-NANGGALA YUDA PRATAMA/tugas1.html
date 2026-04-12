@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Nanggala Yuda Pratama</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body { 
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+        }
+
+        .bg-dark { background-color: #37353E; }
+        .bg-dim { background-color: #44444E; }
+        .bg-bronze { background-color: #715A5A; }
+        .bg-silver { background-color: #D3DAD9; }
+        .text-dark { color: #37353E; }
+        .text-bronze { color: #715A5A; }
+        .text-silver { color: #D3DAD9; }
+        .border-bronze { border-color: #715A5A; }
+    </style>
+</head>
+
+<body class="bg-silver text-dark">
+
+    <header class="fixed w-full top-0 z-50 bg-dark border-b border-white/10 shadow-lg">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-black text-white">
+                <span class="px-3 py-1">NYP</span>
+            </div>
+            
+            <div class="flex space-x-6 md:space-x-10 text-sm font-semibold text-silver">
+                <a href="#tentang" class="hover:text-bronze transition-colors">Tentang</a>
+                <a href="#skill" class="hover:text-bronze transition-colors">Skill</a>
+                <a href="#pengalaman" class="hover:text-bronze transition-colors">Pengalaman & Pencapaian</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="tentang" class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="w-64 h-72 md:w-72 md:h-80 bg-white p-3 rounded-md shadow-md -rotate-2 hover:rotate-0 transition-transform duration-300">
+                <div class="w-full h-full overflow-hidden bg-dim flex items-center justify-center text-silver/50">
+                    <img src="img/gambar1.png" alt="Foto Profil" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 text-dark uppercase tracking-tighter">Nanggala Yuda P.</h1>
+                <p class="text-lg leading-relaxed opacity-80 mb-6 italic">
+                    "Saya adalah mahasiswa Sistem Informasi yang antusias belajar UI design, web dev, dan aplikasi. Senang membangun produk digital yang rapi sambil terus mengasah kemampuan teknis dari nol."
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <span class="px-4 py-2 bg-dark text-silver rounded-full text-xs font-medium">Information SystemsStudent</span>
+                    <span class="px-4 py-2 bg-dark text-silver rounded-full text-xs font-medium">Junior Web Dev</span>
+                    <span class="px-4 py-2 bg-dark text-silver rounded-full text-xs font-medium">Leraning Daily</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="py-20 bg-dark text-silver px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center underline decoration-bronze underline-offset-8">Keahlian</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-dim p-8 rounded-3xl shadow-xl border border-white/5">
+                    <h3 class="text-xl font-semibold mb-6 text-bronze uppercase">Hard Skill</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-dark px-4 py-2 rounded-lg ">Beginner Python</span>
+                        <span class="bg-dark px-4 py-2 rounded-lg text-sm">Beginner SQL Database</span>
+                        <span class="bg-dark px-4 py-2 rounded-lg text-sm">Beginner Web Development</span>
+                        <span class="bg-dark px-4 py-2 rounded-lg text-sm">Desain</span>
+                    </div>
+                </div>
+
+                <div class="bg-dim p-8 rounded-3xl shadow-xl border border-white/5">
+                    <h3 class="text-xl font-semibold mb-6 text-bronze uppercase">Soft Skill</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center"><span class="mr-3 text-bronze">●</span> Kepemimpinan</li>
+                        <li class="flex items-center"><span class="mr-3 text-bronze">●</span> Manajemen Organisasi</li>
+                        <li class="flex items-center"><span class="mr-3 text-bronze">●</span> Public Speaking</li>
+                        <li class="flex items-center"><span class="mr-3 text-bronze">●</span> Semangat Belajar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pengalaman" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+            
+            <div>
+                <h2 class="text-3xl font-bold mb-10 border-b-2 border-bronze inline-block">Pengalaman</h2>
+                <div class="space-y-10 mt-4">
+                    <div class="relative pl-8 border-l-2 border-bronze">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-bronze rounded-full"></div>
+                        <h4 class="font-bold text-xl uppercase text-dark">Koordinator OSIS</h4>
+                        <p class="text-sm text-bronze mb-3 font-semibold">2023 - 2025</p>
+                        <p class="opacity-75 text-sm">Mengkoordinasi program kerja sekolah dan manajemen tim selama dua periode.</p>
+                    </div>
+                    <div class="relative pl-8 border-l-2 border-bronze">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-bronze rounded-full"></div>
+                        <h4 class="font-bold text-xl uppercase text-dark">Paskibraka Bangkalan</h4>
+                        <p class="text-sm text-bronze mb-3 font-semibold">2023</p>
+                        <p class="opacity-75 text-sm">Melatih disiplin dan kerja keras sebagai pengibar bendera tingkat kabupaten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold mb-10 border-b-2 border-bronze inline-block">Pencapaian</h2>
+                <div class="space-y-6 mt-4">
+                    <div class="bg-white p-6 rounded-2xl border-b-4 border-dark shadow-sm">
+                        <h4 class="font-bold text-dark text-lg">Juara 2 MAGE X ITS</h4>
+                        <p class="opacity-70 text-xs mt-1">Kompetisi pengembangan aplikasi tingkat nasional.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border-b-4 border-dark shadow-sm">
+                        <h4 class="font-bold text-dark text-lg">Juara Debat B. Inggris</h4>
+                        <p class="opacity-70 text-xs mt-1">Juara tingkat Kabupaten Bangkalan 2024.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border-b-4 border-dark shadow-sm">
+                        <h4 class="font-bold text-dark text-lg">Penulis Artikel PKM-AI</h4>
+                        <p class="opacity-70 text-xs mt-1">Riset digitalisasi UMKM Batik Tanjung Bumi.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

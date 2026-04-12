@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kabupaten Bangkalan - Bektonag Ongghe</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Color Pallete cui */
+        .bg-cream { background-color: #FFEDCE; }
+        .bg-peach { background-color: #FFC193; }
+        .text-peach { color: #FFC193; }
+        .border-peach { border-color: #FFC193; }
+    </style>
+</head>
+<body class="bg-white font-sans text-gray-800">
+
+    <nav class="sticky top-0 z-50 flex justify-between items-center px-12 py-6 bg-white shadow-sm w-full">
+        <div class="flex flex-col">
+            <h1 class="text-3xl font-black text-gray-800 tracking-tighter leading-none">BANGKALAN</h1>
+        </div>
+        <ul class="flex space-x-12 font-bold text-gray-700">
+            <li><a href="#tentang" class="hover:text-peach">Tentang</a></li>
+            <li><a href="#potensi" class="hover:text-peach">Potensi Daerah</a></li>
+        </ul>
+    </nav>
+
+    <header class="relative h-[500px] flex items-center justify-center w-full overflow-hidden">
+        <img src="img/bangkalan1.jpg" 
+            alt="" class="absolute w-full h-full object-cover">
+        
+        <div class="absolute inset-0 bg-black/40"></div>
+        
+        <div class="relative z-10 text-center px-12">
+            <h2 class="text-7xl font-black text-white mb-4 drop-shadow-2xl">Kabupaten Bangkalan</h2>
+            <p class="text-2xl text-white opacity-90 font-medium">Gerbang Barat Menuju Keajaiban Pulau Madura</p>
+        </div>
+    </header>
+
+    <main class="w-full">
+        
+        <section id="tentang" class="py-24 px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h3 class="text-4xl font-bold border-l-8 border-peach pl-6 mb-8 text-gray-800 uppercase">Tentang Bangkalan</h3>
+                <p class="text-gray-600 leading-relaxed text-xl mb-6 text-justify">
+                    Bangkalan adalah perpaduan sempurna antara sejarah, tradisi, dan kemajuan masa depan. Sebagai rumah bagi <strong>Universitas Trunojoyo Madura</strong>, Bangkalan kini menjadi pusat peradaban baru bagi generasi muda.
+                </p>
+                <p class="text-gray-600 leading-relaxed text-xl text-justify">
+                    Masyarakatnya yang hangat menjunjung tinggi nilai religi dan kekeluargaan, menjadikan kabupaten ini tempat yang nyaman bagi siapa pun yang berkunjung.
+                </p>
+            </div>
+            
+            <div class="bg-cream p-10 rounded-[3rem] border-2 border-peach shadow-inner">
+                <h4 class="font-black text-2xl mb-8 text-gray-700 text-center uppercase tracking-widest">Data Wilayah</h4>
+                <table class="w-full text-xl">
+                    <tr class="border-b border-peach/40">
+                        <td class="py-4 text-gray-500 italic">Semboyan</td>
+                        <td class="py-4 font-bold text-gray-800 italic">"Bektonah Ongghe"</td>
+                    </tr>
+                    <tr class="border-b border-peach/40">
+                        <td class="py-4 text-gray-500">Ikon</td>
+                        <td class="py-4 font-bold text-gray-800">Jembatan Suramadu</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 text-gray-500">Edukasi</td>
+                        <td class="py-4 font-bold text-gray-800">Univ. Trunojoyo</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="potensi" class="bg-gray-50 py-24 px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h3 class="text-5xl font-black text-gray-800 mb-4 uppercase">Potensi Daerah</h3>
+                    <p class="text-xl text-gray-500">Kekayaan Alam, Budaya, dan Kuliner Unggulan</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-3xl shadow-md overflow-hidden hover:scale-105 transition duration-300">
+                        <img src="img/batik.jpeg" alt="Batik" class="w-full h-48 object-cover">
+                        <div class="p-8">
+                            <h4 class="font-bold text-2xl mb-4 text-gray-800">Batik Tanjung Bumi</h4>
+                            <p class="text-gray-600 leading-relaxed">Keindahan mahakarya batik tulis Madura dengan motif warna yang tegas dan berani.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-peach rounded-3xl shadow-md overflow-hidden hover:scale-105 transition duration-300">
+                        <img src="/img/jaddih.jpeg" alt="Bukit Jaddih" class="w-full h-48 object-cover">
+                        <div class="p-8 text-white">
+                            <h4 class="font-bold text-2xl mb-4">Bukit Jaddih</h4>
+                            <p class="leading-relaxed">Eksotisme tebing kapur putih yang memukau, menjadi destinasi favorit fotografer dunia.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-md overflow-hidden hover:scale-105 transition duration-300">
+                        <img src="/img/bebek.jpeg" alt="Bebek" class="w-full h-48 object-cover">
+                        <div class="p-8">
+                            <h4 class="font-bold text-2xl mb-4 text-gray-800">Bebek Sinjay</h4>
+                            <p class="text-gray-600 leading-relaxed">Cita rasa legendaris bebek goreng khas Bangkalan yang dicari pecinta kuliner Nusantara.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
