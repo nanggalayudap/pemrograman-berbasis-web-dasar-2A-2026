@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            background-color: #EEF1FA;
+            color: #1e293b;
+        }
+
+        nav {
+            background-color: #ffffff;
+        }
+
+        .card {
+            background-color: #ffffff;
+        }
+
+        .about-section {
+            background-color: #5E7AC4;
+        }
+
+        .footer-section {
+            background-color: #5E7AC4;
+        }
+
+        .footer-bottom {
+            background-color: #3852B4;
+        }
+
+        body.dark {
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+
+        body.dark nav {
+            background-color: #1e293b;
+        }
+
+        body.dark .card {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark .about-section {
+            background-color: #162044;
+        }
+
+        body.dark .footer-section {
+            background-color: #162044;
+        }
+
+        body.dark .footer-bottom {
+            background-color: #0f172a;
+        }
+
+        body.dark .text-gray-800 {
+            color: #f1f5f9 !important;
+        }
+
+        body.dark .text-gray-600 {
+            color: #cbd5e1 !important;
+        }
+
+        body.dark .text-gray-500 {
+            color: #94a3b8 !important;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="flex justify-between items-center px-12 py-5 shadow-sm sticky top-0 z-50">
+        <div class="flex gap-8 text-gray-600 font-bold text-sm uppercase">
+            <a href="#" class="text-[#3852B4]">Home</a>
+            <a href="#courses" class="hover:text-[#3852B4]">Courses</a>
+            <a href="#" class="hover:text-[#3852B4]">Teachers</a>
+            <a href="#" class="hover:text-[#3852B4]">Pages</a>
+            <a href="#" class="hover:text-[#3852B4]">Blog</a>
+            <a href="#bawah" class="hover:text-[#3852B4]">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button id="theme-toggle" class="border border-gray-300 px-4 py-2 rounded-md text-[10px] font-bold uppercase tracking-wider cursor-pointer flex items-center gap-2">
+                <span id="theme-text">DARK MODE</span>
+            </button>
+
+            <button class="bg-[#3852B4] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-[#2d4294] transition uppercase text-sm">
+                CONTACT US →
+            </button>
+        </div>
+    </nav>
+
+    <header class="max-w-[1400px] mx-auto px-12 py-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+            <span class="text-[#3852B4] font-bold text-lg uppercase">E - LEARNING PLATFORM</span>
+            <h1 class="text-5xl font-bold mt-4 leading-tight text-[#3852B4]">
+                Online Course Education <br>
+                <span class="text-gray-800 font-medium">Feels Like Real Classroom</span>
+            </h1>
+            <div class="flex gap-4 text-xs font-bold text-gray-500 mt-6">
+                <span class="flex items-center gap-1.5">
+                    <img src="/img/checklist.png" alt="check" class="w-4 h-4"> Get Certificate
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <img src="/img/checklist.png" alt="check" class="w-4 h-4"> Gain Job Ready Skill
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <img src="/img/checklist.png" alt="check" class="w-4 h-4"> Study Life
+                </span>
+            </div>
+            <div class="flex gap-4 mt-10">
+                <button class="bg-[#3852B4] text-white px-8 py-3.5 rounded-md font-bold text-sm shadow-lg hover:-translate-y-1 transition uppercase">GET STARTED →</button>
+                <button class="bg-[#F08D39] text-white px-8 py-3.5 rounded-md font-bold text-sm shadow-lg hover:-translate-y-1 transition uppercase">GET COURSE →</button>
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <img src="/img/gambar_orang.png" alt="" class="w-full">
+        </div>
+    </header>
+
+    <section class="about-section py-24 text-white">
+        <div class="max-w-[1400px] mx-auto px-12 flex flex-col md:flex-row items-center gap-16">
+            <div class="h-130 w-200 overflow-hidden">
+                <img src="/img/gambar_course.png" class="w-full h-full object-cover">
+            </div>
+            <div class="md:w-1/2">
+                <span class="text-lg font-bold uppercase">GET TO KNOW ABOUT US</span>
+                <h2 class="text-4xl font-bold mt-3 leading-tight">Transform your future with skills that matter. Start learning today, lead tomorrow.</h2>
+                <p class="mt-3 text-sm max-w-lg">Can helping you build in-demand skills quickly and advance your career in an ever-changing job market.</p>
+                <button class="mt-4 bg-[#F08D39] text-white font-bold px-8 py-3.5 rounded-md shadow-lg hover:-translate-y-1 transition text-xs uppercase tracking-widest">About More →</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10">
+        <div class="max-w-[1400px] mx-auto px-12 grid grid-cols-2 md:grid-cols-6 gap-6 text-[11px] font-bold text-[#3852B4] uppercase tracking-wider">
+            <div class="flex items-center gap-3 justify-center">
+                <img src="/img/icon_folder.svg" class="w-5 h-5"> <span>20k+ Online Course</span>
+            </div>
+            <div class="flex items-center gap-3 justify-center">
+                <img src="/img/icon_jam.svg" class="w-5 h-5"> <span>Lifetime Access</span>
+            </div>
+            <div class="flex items-center gap-3 justify-center">
+                <img src="/img/icon_uang.svg" class="w-5 h-5"> <span>Value For Money</span>
+            </div>
+            <div class="flex items-center gap-3 justify-center">
+                <img src="/img/icon_headphone.svg" class="w-5 h-5"> <span>Lifetime Support</span>
+            </div>
+            <div class="flex items-center gap-3 justify-center">
+                <img src="/img/people_icon.svg" class="w-5 h-5"> <span>Community Support</span>
+            </div>
+            <div class="flex items-center gap-3 justify-center">
+                <img src="/img/icon_download.svg" class="w-5 h-5"> <span>Free Download Course</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="max-w-[1400px] mx-auto px-12 py-24">
+        <h2 class="text-3xl font-bold text-center mb-12 uppercase text-gray-800">Our Popular Course</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div class="card p-4 rounded-2xl hover:shadow-md flex items-center gap-4">
+                <img src="/img/icon_toa.svg" class="w-10 h-10">
+                <div>
+                    <h4 class="font-bold text-sm text-gray-800">Digital Marketing</h4>
+                    <p class="text-[11px] text-gray-600 font-semibold">354 Courses</p>
+                </div>
+            </div>
+            <div class="card p-4 rounded-2xl hover:shadow-md flex items-center gap-4">
+                <img src="/img/icon_pallet.svg" class="w-10 h-10">
+                <div>
+                    <h4 class="font-bold text-sm text-gray-800">Graphic Design</h4>
+                    <p class="text-[11px] text-gray-600 font-semibold">553 Courses</p>
+                </div>
+            </div>
+            <div class="card p-4 rounded-2xl hover:shadow-md flex items-center gap-4">
+                <img src="/img/icon_hp.svg" class="w-10 h-10">
+                <div>
+                    <h4 class="font-bold text-sm text-gray-800">UI/UX Design</h4>
+                    <p class="text-[11px] text-gray-600 font-semibold">175 Courses</p>
+                </div>
+            </div>
+            <div class="card p-4 rounded-2xl hover:shadow-md flex items-center gap-4">
+                <img src="/img/icon_webpage.svg" class="w-10 h-10">
+                <div>
+                    <h4 class="font-bold text-sm text-gray-800">Web Development</h4>
+                    <p class="text-[11px] text-gray-600 font-semibold">211 Courses</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="card rounded-3xl p-3 overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="img/thumbnail-1.png" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-[16px] leading-tight h-12 overflow-hidden text-gray-800 hover:text-[#3852B4]">Learning Figma - UI/UX Design Fundamental</h3>
+                    <div class="flex items-center gap-2 mt-4">
+                        <img src="/img/profil_card.svg" class="w-7 h-7 rounded-full">
+                        <span class="text-[11px] text-gray-800 font-bold">Programmer_Handal</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-auto pt-4 text-[10px] text-gray-800 font-bold uppercase">
+                        <div class="flex items-center gap-1.5"><img src="/img/folder_card.svg" class="w-7 h-7"><span>20 Files</span></div>
+                        <div class="flex items-center gap-1.5"><img src="/img/jam_card.svg" class="w-7 h-7"><span>5 Hours</span></div>
+                        <span class="bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded-md">FREE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-3xl p-3 overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="img/thumbnail-2.png" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-[16px] leading-tight h-12 overflow-hidden text-gray-800 hover:text-[#3852B4]">Python Fundamental - For Algoritma Pemrograman</h3>
+                    <div class="flex items-center gap-2 mt-4">
+                        <img src="/img/profil_card.svg" class="w-7 h-7 rounded-full">
+                        <span class="text-[11px] text-gray-800 font-bold">Programmer_Handal</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-auto pt-4 text-[10px] text-gray-800 font-bold uppercase">
+                        <div class="flex items-center gap-1.5"><img src="/img/folder_card.svg" class="w-7 h-7"><span>20 Files</span></div>
+                        <div class="flex items-center gap-1.5"><img src="/img/jam_card.svg" class="w-7 h-7"><span>5 Hours</span></div>
+                        <span class="bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded-md">FREE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-3xl p-3 overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="/img/thumbnail-3.png" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-[16px] leading-tight h-12 overflow-hidden text-gray-800 hover:text-[#3852B4]">Visual Hook - Course Digital Marketing</h3>
+                    <div class="flex items-center gap-2 mt-4">
+                        <img src="/img/profil_card.svg" class="w-7 h-7 rounded-full">
+                        <span class="text-[11px] text-gray-800 font-bold">Programmer_Handal</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-auto pt-4 text-[10px] text-gray-800 font-bold uppercase">
+                        <div class="flex items-center gap-1.5"><img src="/img/folder_card.svg" class="w-7 h-7"><span>20 Files</span></div>
+                        <div class="flex items-center gap-1.5"><img src="/img/jam_card.svg" class="w-7 h-7"><span>5 Hours</span></div>
+                        <span class="bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded-md">FREE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-3xl p-3 overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="/img/thumbnail-4.png" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-[16px] leading-tight h-12 overflow-hidden text-gray-800 hover:text-[#3852B4]">Layout - Graphic Design For Beginner</h3>
+                    <div class="flex items-center gap-2 mt-4">
+                        <img src="/img/profil_card.svg" class="w-7 h-7 rounded-full">
+                        <span class="text-[11px] text-gray-800 font-bold">Programmer_Handal</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-auto pt-4 text-[10px] text-gray-800 font-bold uppercase">
+                        <div class="flex items-center gap-1.5"><img src="/img/folder_card.svg" class="w-7 h-7"><span>20 Files</span></div>
+                        <div class="flex items-center gap-1.5"><img src="/img/jam_card.svg" class="w-7 h-7"><span>5 Hours</span></div>
+                        <span class="bg-red-600 text-white text-[10px] font-black px-2 py-1 rounded-md">FREE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <button class="bg-[#3852B4] text-white px-10 py-3.5 rounded-md font-bold hover:bg-gray-600 transition shadow-lg text-xs uppercase tracking-widest">View All Course →</button>
+        </div>
+    </section>
+
+    <footer id="bawah" class="footer-section text-white pt-10">
+        <div class="max-w-[1400px] mx-auto px-12 grid md:grid-cols-12 gap-12 text-sm pb-16">
+            <div class="md:col-span-5">
+                <h3 class="text-2xl font-semibold max-w-sm">Dive Into our Online Courses and Ignite Your Learning</h3>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-bold mb-6 text-sm uppercase">About Me</h4>
+                <ul class="space-y-3 opacity-80 text-xs">
+                    <li><a href="#" class="hover:text-[#F08D39]">Short Profile</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Online Course</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Monthly Discount</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Contact</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h4 class="font-bold mb-6 text-sm uppercase">Navigation</h4>
+                <ul class="space-y-3 opacity-80 text-xs">
+                    <li><a href="#" class="hover:text-[#F08D39]">Home</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Teachers</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Pages</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Blog</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-3">
+                <h4 class="font-bold mb-6 text-sm uppercase">More Information</h4>
+                <ul class="space-y-3 opacity-80 text-xs">
+                    <li><a href="#" class="hover:text-[#F08D39]">Privacy and terms</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Copyright</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Accessibility</a></li>
+                    <li><a href="#" class="hover:text-[#F08D39]">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom w-full py-4 text-center text-[10px] text-white/70">
+            ©2026 Online Course. All right reserved. Designed By Dhani Kusuma Prasetyo
+        </div>
+    </footer>
+
+    <script>
+        var themeToggle = document.getElementById('theme-toggle');
+        var themeText = document.getElementById('theme-text');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            if (document.body.classList.contains('dark')) {
+                themeText.textContent = 'LIGHT MODE';
+            } else {
+                themeText.textContent = 'DARK MODE';
+            }
+        });
+    </script>
+
+    
+</body>
+</html>
